@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Shannon Pets</title>
+    <style>
+      body {text-align: center; font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;}
+      body {background-image: linear-gradient(to bottom right, MediumSeaGreen,SlateBlue,MediumSeaGreen);}
+      header {border-style: groove; border-radius: 5px; width: 50%; margin:auto;}
+    </style>
+  </head>
+  <body>
+    <header  style="background-color:MediumSeaGreen">
+     <h1 id=quest><strong>Questionnaire</strong></h1>
+     <nav><a href="file:///C:/Users/colts/Pictures/html/Shannon%20Pets%20Main.html"><strong>HOME</strong></a>
+       <a href="file:///C:/Users/colts/Pictures/html/Shannon%20Pets%20Past.html#PetsPast"><strong>PETS PAST</strong></a>
+       <a href="#quest"><strong>QUESTIONNAIRE</strong></a>
+     </nav>
+     </header>
+
+     <section>
+       <form class="petsq" action="C:\Users\colts\Pictures\html\petsq.pyc" method="post">
+         <p>Fill out this fun questionnaire about pets!</p>
+         <label for="firstname">First Name:</label><br>
+         <input type="text" name="firstname" value=""><br>
+
+         <label for="lastname">Last Name:</label><br>
+         <input type="text" name="lastname" value=""><br>
+
+         <p>Do you have any pets?</p>
+         <label for="yes">Yes</label>
+         <input type="radio" name="anypets" value="yes">
+         <label for="no">No</label>
+         <input type="radio" name="anypets" value="no"><br><br>
+
+         <label for="numpets">How many pets do you have?</label><br>
+         <select id="numpets" name="numpets">
+           <option value="zero">0</option>
+           <option value="one">1</option>
+           <option value="two">2</option>
+           <option value="three">3</option>
+           <option value="four">4</option>
+           <option value="fiveplus">5 or more</option>
+          </select><br><br>
+
+          <label for="type">What type(s) of pet(s) do you have?</label><br>
+          <label for="Dog">Dog</label>
+          <input type="checkbox" name="type" value="Dog"><br>
+          <label for="Cat">Cat</label>
+          <input type="checkbox" name="type" value="Cat"><br>
+          <label for="Rabbit">Rabbit</label>
+          <input type="checkbox" name="type" value="Rabbit"><br>
+          <label for="Fish">Fish</label>
+          <input type="checkbox" name="type" value="Fish"><br>
+          <label for="Reptile">Reptile</label>
+          <input type="checkbox" name="type" value="Reptile"><br>
+          <label for="Rodent">Rodent</label>
+          <input type="checkbox" name="type" value="Rodent"><br>
+          <label for="Horse">Horse</label>
+          <input type="checkbox" name="type" value="Horse"><br>
+          <label for="Other">Other</label>
+          <input type="checkbox" name="type" value="Other"><br>
+
+          <p>What are your pets' names?</p>
+          <label for="petone">Pet One:</label>
+          <input type="text" name="petone" value="">
+          <label for="pettwo">Pet Two:</label>
+          <input type="text" name="pettwo" value="">
+          <label for="petthree">Pet Three:</label>
+          <input type="text" name="petthree" value="">
+          <label for="petfour">Pet Four:</label>
+          <input type="text" name="petfour" value="">
+          <label for="petfive">Pet Five:</label>
+          <input type="text" name="petfive" value=""><br>
+
+          <p>Is there anything you want us to know about your pet(s)?</p>
+          <textarea name="addinfo" rows="8" cols="80"></textarea><br>
+
+          <input type="submit" name="submit" value="Done!">
+
+       </form>
+     </section>
+
+
+  </body>
+</html>
